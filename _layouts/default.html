@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="/js/main.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		{% seo %}
 
 		{% if jekyll.environment == 'production' %}
@@ -23,7 +24,7 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/"><img src="/images/ohm_logo.png" height="40" alt="{{ site.title }} logo"></a>
+				<a href="/" class="logo"><img src="/images/brain.png" height="40" alt="{{ site.title }} logo">NE<strong>HUNGRY</strong>MIND</a>
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
 
@@ -33,12 +34,6 @@
 			</form>
 
 			{% include sidebar.html %}
-
-			<p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
-				</a>
-			</p>
 		</header>
 		<div class="main">
 			{{ content }}

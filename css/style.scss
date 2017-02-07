@@ -17,3 +17,23 @@ $mobile-break: 700px;
 @import "main";
 @import "borland";
 @import "monaki";
+
+a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $nav-background-color;
+  font-weight: 100;
+
+  strong {
+    font-weight: 600;
+  }
+
+  img {
+    margin-right: 0;
+  }
+}
+
+.left-docs > div[class*="wistia"] {
+  margin-bottom: 1em;
+}
