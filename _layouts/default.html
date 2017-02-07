@@ -23,7 +23,7 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/"><img src="/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
+				<a href="/"><img src="/images/ohm_logo.png" height="40" alt="{{ site.title }} logo"></a>
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
 
@@ -43,6 +43,8 @@
 		<div class="main">
 			{{ content }}
 		</div>
+		<script src="//fast.wistia.com/embed/medias/1j5bqrhc65.jsonp" async></script>
+		<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
