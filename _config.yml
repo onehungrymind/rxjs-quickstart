@@ -2,8 +2,8 @@
 # Site
 
 title: RxJS Quickstart
-description: A template for OneHungryMind endeavours.
-url: https://example.com
+description: All you need to know and nothing you don't about RxJS.
+url: http://rxjsftw.in
 google_analytics_key:
 permalink: pretty
 baseurl: /rxjs-quickstart/
