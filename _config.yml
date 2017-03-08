@@ -6,7 +6,7 @@ description: A template for OneHungryMind endeavours.
 url: https://example.com
 google_analytics_key:
 permalink: pretty
-baseurl: /rxjs-quickstart
+baseurl: /rxjs-quickstart/
 
 collections:
   basics:
