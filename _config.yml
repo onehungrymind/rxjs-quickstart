@@ -8,12 +8,16 @@ google_analytics_key:
 permalink: pretty
 
 collections:
-  components:
-    title: Components
+  basics:
+    title: Basics
     position: 1
-  isolated:
-    title: Isolated
+  state:
+    title: State
     position: 2
+  realtime:
+    title: Realtime
+    position: 3
+
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag

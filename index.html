@@ -1,5 +1,5 @@
 ---
-title: API Docs
+title: RxJS Quickstart
 ---
 {% assign sorted_collections = site.collections | sort: "position" %}
 {% for collection in sorted_collections %}
@@ -17,6 +17,14 @@ title: API Docs
 				</h3>
 				{% if doc.description %}
 					<p class="description">{{doc.description}}</p>
+				{% endif %}
+
+				{% if doc.wistia_id %}
+					<div class="wistia_responsive_padding">
+						<div class="wistia_responsive_wrapper">
+							<div class="wistia_embed wistia_async_{{doc.wistia_id}} videoFoam=true">&nbsp;</div>
+						</div>
+					</div>
 				{% endif %}
 
 				{{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
