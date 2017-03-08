@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 You'll succeed if you do this.
 {: .success }
 
