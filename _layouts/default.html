@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-
-		<link rel="stylesheet" href="/css/style.css">
+		<base href="/rxjs-quickstart/">
+		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="/js/main.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		{% seo %}
 
@@ -24,11 +24,11 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/" class="logo"><img src="/images/brain.png" height="40" alt="{{ site.title }} logo">NE<strong>HUNGRY</strong>MIND</a>
+				<a href="/" class="logo"><img src="images/brain.png" height="40" alt="{{ site.title }} logo">NE<strong>HUNGRY</strong>MIND</a>
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
 
-			<form action="/search/" method="get">
+			<form action="search/" method="get">
 				<input type="text" name="q" id="search-input" placeholder="Search">
 				<input type="submit" value="Search" style="display: none;">
 			</form>
