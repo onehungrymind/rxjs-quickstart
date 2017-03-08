@@ -21,6 +21,7 @@ collections:
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - github-pages
 
 exclude:
   - readme.md
