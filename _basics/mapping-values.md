@@ -1,7 +1,7 @@
 ---
 title: Mapping Values
 position: 1.1
-description: Write your first test with Jasmine
+description: Augment a stream by mapping its values
 wistia_id: dnslnbw2lo
 right_code: |
   ~~~ typescript
@@ -37,6 +37,3 @@ right_code: |
   }
   ~~~
 ---
-
-Bacon ipsum dolor amet chuck short ribs t-bone tenderloin. Meatloaf rump alcatra swine filet mignon corned beef tongue leberkas tail salami shoulder venison strip steak shankle hamburger. Pork loin leberkas brisket, frankfurter pig corned beef tongue beef ribs swine jerky tenderloin. Andouille brisket swine, jowl cow jerky kevin sausage.
-
