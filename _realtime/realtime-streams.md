@@ -6,8 +6,8 @@ wistia_id: tpcztytfjb
 right_code: |
   ~~~ typescript
   import { Component, OnInit, ViewChild } from '@angular/core';
-  import { AngularFire } from 'angularfire2';
-  
+  import { AngularFireDatabase } from 'angularfire2/database';
+
   @Component({
     selector: 'app-counter-client',
     template: `
@@ -19,14 +19,14 @@ right_code: |
   })
   export class CounterClientComponent implements OnInit {
     count: number;
-  
-    constructor(private af: AngularFire) {}
-  
+
+    constructor(private db: AngularFireDatabase) {}
+
     ngOnInit() {
-      const remote$ = this.af.database.object('clicker/');
-  
+      const remote$ = this.db.object('clicker/').valueChanges();
+
       remote$
-        .subscribe(result => this.count = result.ticker)
+        .subscribe((result: any) => this.count = result.ticker)
       ;
     }
   }
@@ -34,37 +34,36 @@ right_code: |
   {: title="Client"}
   ~~~typescript
   import { Component, OnInit, ViewChild } from '@angular/core';
-  import { Observable } from 'rxjs/Observable';
-  import { AngularFire } from 'angularfire2';
-  import 'rxjs/add/observable/fromEvent';
-  import 'rxjs/add/operator/do';
-  import 'rxjs/add/operator/map';
-  import 'rxjs/add/operator/startWith';
-  
+  import { fromEvent } from 'rxjs';
+  import { scan, startWith } from 'rxjs/operators';
+  import { AngularFireDatabase } from 'angularfire2/database';
+
   interface Ticker {
-    ticker: number
+    ticker: number;
   }
-  
+
   @Component({
     selector: 'app-counter-master',
     template: `
-    <button #btn md-raised-button color="accent">Click me!</button>
+    <button #btn mat-raised-button color="accent">Click me!</button>
     `
   })
   export class CounterMasterComponent implements OnInit {
     @ViewChild('btn') btn;
-  
-    constructor(private af: AngularFire) {}
-  
+
+    constructor(private db: AngularFireDatabase) {}
+
     ngOnInit() {
-      const remote$ = this.af.database.object('clicker/');
-  
-      Observable.fromEvent(this.getNativeElement(this.btn), 'click')
-        .startWith({ticker: 0})
-        .scan((acc: Ticker, curr) => { return { ticker: acc.ticker + 1 }; })
-        .subscribe(event => remote$.update(event));
+      const remoteRef = this.db.object('clicker/');
+
+      fromEvent(this.getNativeElement(this.btn), 'click')
+        .pipe(
+          startWith({ticker: 0}),
+          scan((acc: Ticker, curr) => ({ ticker: acc.ticker + 1 }))
+        )
+        .subscribe(event => remoteRef.update(event));
     }
-  
+
     getNativeElement(element) {
       return element._elementRef.nativeElement;
     }
