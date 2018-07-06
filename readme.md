@@ -1,9 +1,7 @@
 # RxJS Quickstart
 ![image](./images/readme-screenshot.png)
 
-This repo contains some introductory examples of pairing Angular with RxJS.
-
-It covers many of the core scenarios that Angular developers would encounter in the wild.
+This repo contains introductory examples of using RxJS in an Angular application.
 
 ## Development
 This site is built with Jekyll, so you will need a couple items to get started.
