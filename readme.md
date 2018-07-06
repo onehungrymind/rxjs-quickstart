@@ -37,7 +37,10 @@ Once Node and NPM are installed, install surge.sh by running `npm i -g surge`.
 We have created a script in this directory called `deploy.sh` that deploys to surge.
 The script uses the value in the `CNAME` file in this directory to automatically detect which domain is pushed to.
 To run the script, simply execute `./deploy.sh` in this directory.
-If you want to change the deploy destination, run the following:
+
+> Note: you may need to run `chmod +x ./deploy.sh` to make it executable.
+
+If you want to build without the script, run the following:
 ```
 bundle exec jekyll build # generate the necessary static assets
 surge _site <your-domain.surge.sh> # upload assets to surge
