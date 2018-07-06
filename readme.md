@@ -34,9 +34,9 @@ We recommend installing it via [NVM](https://github.com/creationix/nvm), but you
 Once Node and NPM are installed, install surge.sh by running `npm i -g surge`.
 
 ### Deploying to Surge
-We have created a script in this directory called `deploy.sh` that deploys to surge.
-The script uses the value in the `CNAME` file in this directory to automatically detect which domain is pushed to.
-To run the script, simply execute `./deploy.sh` in this directory.
+We have created a script in the root directory called `deploy.sh` that deploys to surge.
+The script uses the value in the `CNAME` file in the same directory to automatically detect which domain is pushed to.
+To run the script, simply execute `./deploy.sh` while in the root directory.
 
 > Note: you may need to run `chmod +x ./deploy.sh` to make it executable.
 
