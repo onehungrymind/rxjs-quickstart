@@ -2,7 +2,7 @@
 title: Merging Streams
 position: 2.1
 description: Merging two streams into a single stream
-wistia_id: 25k1htpl5h
+wistia_id:
 
 right_code: |
   ~~~ typescript

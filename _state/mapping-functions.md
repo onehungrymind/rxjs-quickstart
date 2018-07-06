@@ -2,7 +2,7 @@
 title: Mapping to Functions
 position: 2.2
 description: Mapping streams to functions to provide a more declarative syntax
-wistia_id: zrse9pmxk3
+wistia_id:
 right_code: |
   ~~~ typescript
   import { Component, OnInit } from '@angular/core';

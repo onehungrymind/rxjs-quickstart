@@ -2,7 +2,7 @@
 title: Mapping Values
 position: 1.1
 description: Augment a stream by mapping its values
-wistia_id: dnslnbw2lo
+wistia_id:
 right_code: |
   ~~~ typescript
   import { Component, OnInit, ViewChild } from '@angular/core';

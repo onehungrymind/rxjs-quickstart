@@ -2,7 +2,7 @@
 title: Maintaining State
 position: 2
 description: Maintaining state within a stream
-wistia_id: fxt6woxlwa
+wistia_id:
 right_code: |
   ~~~ typescript
   import { Component, OnInit, ViewChild } from '@angular/core';

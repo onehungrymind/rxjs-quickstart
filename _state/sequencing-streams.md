@@ -1,7 +1,7 @@
 ---
 title: Sequencing Streams
 position: 2.3
-wistia_id: h83z5yly2k
+wistia_id:
 description: Sequencing streams for complex operations
 right_code: |
   ~~~ typescript

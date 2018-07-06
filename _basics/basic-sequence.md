@@ -2,7 +2,7 @@
 title: Basic Sequence
 position: 1
 description: Create a basic RxJS stream
-wistia_id: ktdesnzaz8
+wistia_id:
 right_code: |
   ~~~ typescript
   import { Component, OnInit, ViewChild } from '@angular/core';

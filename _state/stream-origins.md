@@ -2,7 +2,7 @@
 title: Stream Origins
 position: 2.4
 description: MOAR sequencing!
-wistia_id: yfoe11fjn4
+wistia_id:
 right_code: |
   ~~~ typescript
   import { Component, OnInit } from '@angular/core';
